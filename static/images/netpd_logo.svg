@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1923"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.1 r9760"
+   width="172"
+   height="27"
+   version="1.0"
+   sodipodi:docname="netpd_icon_logo.svg"
+   style="display:inline"
+   inkscape:export-filename="/home/roman/Downloads/cdcover/fertig/netpd_icon_logo.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata1928">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1926" />
+  <sodipodi:namedview
+     inkscape:window-height="1032"
+     inkscape:window-width="1680"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10000"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="true"
+     inkscape:grid-points="true"
+     inkscape:object-bbox="true"
+     inkscape:object-points="true"
+     inkscape:object-nodes="true"
+     inkscape:guide-points="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="10.24"
+     inkscape:cx="60.669145"
+     inkscape:cy="8.1094581"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:current-layer="layer2"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2990"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="vectorized"
+     style="display:inline"
+     transform="translate(0,-13)">
+    <g
+       id="g3763"
+       style="fill:#ff5f02;fill-opacity:1;display:inline"
+       transform="translate(-65,-50)">
+      <path
+         id="rect2827"
+         d="m 67,70 c -1.108,0 -2,0.892 -2,2 l 0,13 4,0 0,-13 6,0 0,13 4,0 0,-13 c 0,-1.108 -0.892,-2 -2,-2 l -10,0 z"
+         style="fill:#ff5f02;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="rect2834"
+         d="m 108,70 c -1.108,0 -2,0.892 -2,2 l 0,4 0,7 c 0,1.108 0.892,2 2,2 l 12,0 0,-2 -10,0 0,-5 8,0 c 1.108,0 2,-0.892 2,-2 l 0,-4 c 0,-1.108 -0.892,-2 -2,-2 l -10,0 z m 2,2 6,0 0,4 -6,0 0,-4 z"
+         style="fill:#ff5f02;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="rect2858"
+         d="m 149,63 0,7 -3,0 0,2 3,0 0,13 4,0 0,-13 3,0 0,-2 -3,0 0,-7 -4,0 z"
+         style="fill:#ff5f02;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="rect2863"
+         d="m 183,70 0,2 0,11 0,7 4,0 0,-5 8,0 c 1.108,0 2,-0.892 2,-2 l 0,-11 c 0,-1.108 -0.892,-2 -2,-2 l -8,0 -2,0 -2,0 z m 4,2 6,0 0,11 -6,0 0,-11 z"
+         style="fill:#ff5f02;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path2871"
+         d="m 233,63 0,2 0,2.75 0,2.25 -8,0 c -1.108,0 -2,0.892 -2,2 l 0,11 c 0,1.108 0.892,2 2,2 l 8,0 2,0 2,0 0,-2 0,-11 0,-4.25 0,-2.75 0,-2 -4,0 z m -6,9 6,0 0,11 -6,0 0,-11 z"
+         style="fill:#ff5f02;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+  <rect
+     style="fill:#000000;fill-opacity:1;stroke:none"
+     id="rect2876"
+     width="242"
+     height="40"
+     x="1.953125"
+     y="91.21875" />
+</svg>
