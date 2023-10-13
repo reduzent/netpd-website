@@ -4,7 +4,6 @@
     font-weight: lighter;
     font-family: $font-family-base;
   }
-
   p {
     //margin: 0 auto;
     font-size: 1.2rem;
@@ -15,6 +14,12 @@
     }
     @include media-breakpoint-up(lg) {
       //width: 60%;
+    }
+  }
+  ul {
+    li {
+      font-size: 1.2rem;
+      font-weight: lighter;
     }
   }
   .terminal {
