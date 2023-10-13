@@ -1,4 +1,11 @@
 .header {
+  .main-menu {
+    ul {
+      li {
+        font-size: 0.95rem;
+      }
+    }
+  }
   color: $primary;
   background-color: #f4f5fb;
   display: flex;
