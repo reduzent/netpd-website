@@ -1,0 +1,76 @@
+baseURL = 'https://netpd.org/'
+languageCode = 'en-us'
+title = 'n e t p d'
+theme = 'hugo-whisper-theme'
+enableInlineShortCodes = true
+copyright = 'netpd.org'
+
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+
+# Controls how many words are printed in the content summary on the docs homepage.
+# See https://gohugo.io/content-management/summaries/
+summaryLength = 30
+
+[[menu.main]]
+    name = "about"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "download"
+    url = "/download/"
+    weight = 2
+
+[[menu.main]]
+    name = "docs"
+    url = "/docs/"
+    weight = 4
+
+[[menu.main]]
+    name = "listen"
+    url = "/listen/"
+    weight = 5
+
+[[menu.main]]
+    name = "instruments"
+    url = "/instruments/"
+    weight = 6
+
+[[menu.main]]
+    name = "community"
+    url = "/community/"
+    weight = 7
+
+[params]
+  google_analytics_id=""
+  homepage_button_link = '/docs'
+  homepage_button_text = 'Read The Docs'
+  homepage_intro = 'netpd - A Collaborative Realtime Networked Music Making Environment'
+
+  ## You can enable to add anchor links to header elements
+  # enable_anchor_link = true
+
+  [params.homepage_meta_tags]
+    meta_description = "netpd - A Collaborative Realtime Networked Music Making Environment"
+    meta_og_title = "netpd"
+    meta_og_type = "website"
+    meta_og_url = "https://netpd.org"
+    meta_og_image = ""
+    meta_og_description = ""
+
+  [params.logo]
+      mobile = "/images/netpd_logo.svg"
+      standard  = "/images/netpd_logo.svg"
+
+  [params.footer]
+    copyright_text = 'built with Hugo, netpd community, 2023'
