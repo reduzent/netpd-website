@@ -34,7 +34,7 @@ All recorded sessions (see link above) are played in shuffle mode.
 *butchered by eni*  
 2007
 
-[![netpd dubarea mixed by opusday](images/netpd-dubarea.jpg)](dubarea-vol-1)  
-**[dub area (Vol. 1)](dubarea-vol-1)**  
+[![netpd dubarea mixed by opusday](images/netpd-dubarea.jpg)](dub-area-vol-1)  
+**[dub area (Vol. 1)](dub-area-vol-1)**  
 *mixed by opusday*  
 2006
