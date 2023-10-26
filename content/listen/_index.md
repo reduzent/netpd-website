@@ -24,9 +24,8 @@ All recorded sessions (see link above) are played in shuffle mode.
 ## compilations and mixes
 
 
-
-[![Saturn In Opposition](images/saturn_in_opposition_cover_240x240.jpg)](SaturnInOpposition)  
-**[Saturn In Opposition](SaturnInOpposition)**  
+[![Saturn In Opposition](images/saturn_in_opposition_cover_240x240.jpg)](saturn-in-opposition)  
+**[Saturn In Opposition](saturn-in-opposition)**  
 *by Reduzent & Sqgl*  
 2017
 
