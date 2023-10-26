@@ -26,3 +26,5 @@ There is still a lot I don't understand and I struggled hard to
 suppress many of its features. Most likely I do many things in a
 non-sensical way. Feel free to suggests improvements.
 
+
+![netpd-logo](static/images/netpd_logo.svg)
