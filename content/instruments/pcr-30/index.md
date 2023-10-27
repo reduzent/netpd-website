@@ -35,8 +35,8 @@ disabled (see button on the top), so that each peer might use their dedicated
 instance with their own mapping.
 
 ### Bridge to unstep
-The selector at the bottom sets an [unstep](unstep) instance where
-incoming MIDI notes are sent to. This allows any instrument that uses [unstep](unstep)
+The selector at the bottom sets an [unstep](../unstep) instance where
+incoming MIDI notes are sent to. This allows any instrument that uses [unstep](../unstep)
 to be played live with a keyboard. **Note**: notes are only heard locally. The
 button labelled `r` enables the recording of incoming notes to the selected
-[unstep](unstep) instance.
+[unstep](../unstep) instance.

@@ -6,7 +6,7 @@ title: 'master'
 
 ![master](master.png)
 
-**master** serves as the main clock for sequencers and the meta sequencer [metaseq](metaseq).
+**master** serves as the main clock for sequencers and the meta sequencer [metaseq](../metaseq).
 It controls current "song" position and tempo. Tempo can be varied freely. The clock
 is output as an integer number counting upwards. One step represents a 16th note if
 we consider the beats in the BPM to be quarter notes. The clock itself is agnostic

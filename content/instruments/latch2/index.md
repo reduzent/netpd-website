@@ -10,11 +10,11 @@ title: 'latch2'
 parameter of any instrument that consists of only one number. More
 complex parameters are not supported.
 
-Unlike [latch3](latch3), the timing is not bound to the master clock. Changing
+Unlike [latch3](../latch3), the timing is not bound to the master clock. Changing
 master tempo or switching master on and off doesn't influence automation
 playback of **latch2**. Playback is running *freely*. This can be fun
 sometimes, but it breaks netpd's goal of delivering the exact same result
-on each client. If you mind that, use [latch3](latch3).
+on each client. If you mind that, use [latch3](../latch3).
 
 ### Usage
 

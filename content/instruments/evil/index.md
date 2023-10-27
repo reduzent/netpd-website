@@ -17,7 +17,7 @@ For each loaded instance of  **evil**, there can only be one client acting as
 sender, while the transmitted stream is received by all clients, the
 sender included. For becoming a sender, three conditions need to be met:
 
-- [master](master) (the master clock) needs be running
+- [master](../master) (the master clock) needs be running
 - DSP needs to be turned on
 - ownership needs to be assigned to the sending client
 
@@ -44,7 +44,7 @@ experiences a buffer underrun, it notifies the sender instance, which then
 immediately stops transmitting. If transmission keeps stopping often soon
 after start, this could mean that at least one client doesn't have enough
 bandwidth for evil to work properly. It could also mean that one client's
-clock is ahead in time. Make sure that all participating client's [master](master)
+clock is ahead in time. Make sure that all participating client's [master](../master)
 is in sync.
 
 #### Correct timing
@@ -52,5 +52,5 @@ is in sync.
 **evil** tries to start playback exactly aligned to the generated instruments,
 offset by the delay in the *delay* parameter. This only works correctly, if
 the effective round-trip audio latency is configured correctly in
-[netpd-preferences](docs/netpd-preferences).
+[netpd-preferences](/docs/netpd-preferences).
 
