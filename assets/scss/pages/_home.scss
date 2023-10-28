@@ -10,6 +10,7 @@
   }
   dd {
     margin-left: 20px;
+    margin-bottom: 12px;
   }
   dl, p {
     //margin: 0 auto;
@@ -22,6 +23,9 @@
     @include media-breakpoint-up(lg) {
       //width: 60%;
     }
+  }
+  strong {
+    font-weight: bolder;
   }
   ul {
     li {
