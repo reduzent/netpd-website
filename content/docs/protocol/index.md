@@ -8,7 +8,7 @@ title: protocol
 
 ### OSC
 The protocol employed by **netpd** to connect client and server is based on
-the [OSC 1.1](http://opensoundcontrol.org/spec-1_1) protocol specification.
+the [OSC 1.1](https://opensoundcontrol.stanford.edu/spec-1_1.html) protocol specification.
 Some additional rules were applied on top of that specification that were
 necessary for certain goals of the netpd framework. Those rules are described
 on this page.
@@ -38,7 +38,7 @@ The OSC standard defines a way to pack one or several OSC messages into a so-cal
 are not supported by **netpd** and support for them is yet not planned. At this time,
 when sending an *OSC bundle* to the [netpd-server](/docs/server), the server will
 silently disregard it. Only plain OSC messages are supported. Please refer to the
-[OSC specification](http://opensoundcontrol.org/spec-1_1) for the detailed definitions
+[OSC specification](https://opensoundcontrol.stanford.edu/spec-1_1.html) for the detailed definitions
 of *OSC message* and *OSC bundle*.
 
 ### Layers
