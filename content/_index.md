@@ -26,6 +26,7 @@ other purposes, where realtime state synchronization is a requirement.
 The website at https://netpd.org has experienced a major revision. It's
 now based on [Hugo](https://gohugo.io/) (static website builder)
 and the [whisper](https://github.com/zerostaticthemes/hugo-whisper-theme.git) theme.
+The old site was moved to [https://old.netpd.org](https://old.netpd.org)
 
 ### ripple - a sample-based synthesizer
 
