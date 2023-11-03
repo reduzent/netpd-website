@@ -2,7 +2,7 @@
    // addition by roman
    width: 70%;
    text-align: justify;
-   margin-left: 100px;
+   margin-left: 50px;
    // addition until here
   -webkit-font-smoothing: antialiased;
   .highlight {
@@ -88,28 +88,29 @@
   h3 {
     font-size: 1.6rem;
     line-height: 1.4;
-    font-weight: 400;
+    font-weight: 300;
+    letter-spacing: 0.1em;
     font-family: $font-family-base;
     margin-bottom: 20px;
   }
   h4 {
     font-size: 1.5rem;
     line-height: 1.4;
-    font-weight: 500;
+    font-weight: 300;
     font-family: $font-family-base;
     margin-bottom: 20px;
   }
   h5 {
     font-size: 1.4rem;
     line-height: 1.4;
-    font-weight: 600;
+    font-weight: 400;
     font-family: $font-family-base;
     margin-bottom: 20px;
   }
   h6 {
     font-size: 1.2rem;
     line-height: 1.4;
-    font-weight: 700;
+    font-weight: 300;
     font-family: $font-family-base;
     margin-bottom: 20px;
   }

@@ -27,7 +27,7 @@ more luck reaching people through one of the other channels.
 ##### IRC
 
 - **irc.libera.chat**:6697
-- * Channel: **#netpd** (very little activity)
+- Channel: **#netpd** (very little activity)
 
 ### Jam:
 
