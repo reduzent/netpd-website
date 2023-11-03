@@ -34,10 +34,10 @@ Unpack the archive to any location you have write access. That's it.
   Click *list* to get a list all connected users.
 - Click the *unpatch* button in chat to launch
   the [unpatch](../docs/unpatch) instrument manager. If there is already a
-  session going on, the [instruments](../instrumets) used in the ongoing
+  session going on, the [instruments](../instruments) used in the ongoing
   session are automatically loaded (they are first downloaded from other peers,
   if necessary).
-- Load [instruments](../instrumetns) into the current session by clicking on
+- Load [instruments](../instruments) into the current session by clicking on
   any of the instrument names in the upper scroll list.
   Alternatively, just type the name of the instrument (without the
   extension `.pd`) into the input box and hit enter.
