@@ -25,7 +25,8 @@ other purposes, where realtime state synchronization is a requirement.
 
 The website at https://netpd.org has experienced a major revision. It's
 now based on [Hugo](https://gohugo.io/) (static website builder)
-and the [whisper](https://github.com/zerostaticthemes/hugo-whisper-theme.git) theme.
+and the [whisper](https://github.com/zerostaticthemes/hugo-whisper-theme.git)
+theme. The content is hosted in a [git repository](https://github.com/reduzent/netpd-website).
 The old site was moved to [https://old.netpd.org](https://old.netpd.org)
 
 ### ripple - a sample-based synthesizer
@@ -37,9 +38,4 @@ modes. Finally an instrument that fully uses [unpunch](docs/unpunch)'s features.
 
 Originally written by Mike Moreno, this physical modelling based instrument
 was ported to netpd. Check [ep-mk2](instruments/ep-mk2).
-
-### [Discourse](https://www.discourse.org/) for the community
-
-Please check https://untalk.netpd.org, the place for the netpd community
-to get help and discuss matters.
 
