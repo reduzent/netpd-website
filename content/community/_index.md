@@ -51,7 +51,7 @@ It's common practice that people work on instruments that they loaded
 themselves. But it is normally OK for anyone to tweak any instruments.
 Do not close instruments without notice. Learn to appreciate how
 things emerge. But then, sessions often profit from novel input of a
-fresh mind that shake things around a bit.
+fresh mind that shakes things up a bit.
 
 Recordings from online sessions are considered nobody's property and
 sharing results on public forums is the rule.
