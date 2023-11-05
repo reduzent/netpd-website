@@ -34,5 +34,10 @@ print
 : When enabled, unpatch is printing information about up|down|loading and closing instruments
 to Pd's console.
 
+### unpatch's command interface
 
-
+`/new <instrument>`
+: create a new instrument from template. Replace `<instrument>` with the name of your new
+instrument. The new instrument contains all the boilerplate required for a working instrument
+and provides basic comment about the available [netpd-abstractions](../netpd-abstractions).
+Read some more about [instrument creation](../instrument-creation).
