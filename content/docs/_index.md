@@ -63,7 +63,9 @@ in their own [instruments](../instruments) section.
 
 ### Creating instruments
 
-**TODO**: Document instrument creation
+Anyone can create their own instruments and use them in sessions with others.
+All aspects of creating new instruments or converting existing patches
+to instruments is described in [instrument creation](instrument-creation).
 
 ------------------------
 

@@ -39,5 +39,5 @@ to Pd's console.
 `/new <instrument>`
 : create a new instrument from template. Replace `<instrument>` with the name of your new
 instrument. The new instrument contains all the boilerplate required for a working instrument
-and provides basic comment about the available [netpd-abstractions](../netpd-abstractions).
+and illustrates the usage of some of  the available [netpd-abstractions](../netpd-abstractions).
 Read some more about [instrument creation](../instrument-creation).
