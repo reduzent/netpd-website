@@ -55,7 +55,8 @@ for the instrument to work) stay hidden.
 While the declaration of dependencies is optional, the declaration of a version
 is mandatory. This applies to both, instruments and their abstractions.
 
-**Note**: Instruments work only when loaded by [unpatch](../unpatch). If you're
+#### Natural habitat of instruments
+Instruments work only when loaded by [unpatch](../unpatch). If you're
 familiar with UNIX shells, think of it as [unpatch](../unpatch)  setting
 some environment variables for the instrument to work properly. It tells the
 instrument where to look for loading [netpd-abstractions](../netpd-abstractions)
