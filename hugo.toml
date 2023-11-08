@@ -73,4 +73,5 @@ summaryLength = 30
       standard  = "/images/netpd_logo.svg"
 
   [params.footer]
-    copyright_text = 'built with Hugo, netpd community, 2023'
+    copyright_text = '🄯  netpd.org, 2023'
+

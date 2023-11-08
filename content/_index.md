@@ -16,6 +16,11 @@ other purposes, where realtime state synchronization is a requirement.
 
 ---
 
+## sitemap
+[Overview of all pages](/sitemap)
+
+---
+
 ![netpd in action](images/netpd-in-action.png)
 
 ---
