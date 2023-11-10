@@ -66,3 +66,104 @@ to be loaded in [unpatch](../unpatch). Loading an instrument in Pd directly
 most likely triggers a bunch of `.. couldn't create` errors and the patch
 fails to work as expected. Thus, also the development of a new (or existing)
 instrument needs to happen while being loaded by [unpatch](../unpatch).
+
+### Create the boilerplate
+[unpatch](../unpatch) helps you create a new instrument skeleton from scratch.
+You just need to come up with a name for your new instrument. Ideally, the
+name is easy to type, which makes it easier to load your instrument into
+a session. It's established to use lower-case letters, numbers and dashes.
+
+#### Protection mode
+Normally, [unpatch](../unpatch) would automatically transfer any open
+instruments to other peers when they join the session and don't have a copy themselves.
+Since you're going to start  developing your instrument, you might want to prevent
+[unpatch](../unpatch) from doing so. You can enable protected mode (where
+[unpatch](../unpatch) doesn't interact with other peers) by typing the following
+to the [chat](../chat) text input:
+
+```
+/unpatch protect on
+```
+
+A small umbrella (☂) near the *unpatch* label indicates that [unpatch](../ubpatch)
+is running in protected mode now.
+
+#### Start with the template
+If you know a name, launch [unpatch](../unpatch) and type the following into the
+[unpatch](../unpatch)'s text input (slightly darker area in the center):
+
+```
+/new anapoly
+```
+
+A new instrument appears in [unpatch](../unpatch)'s lower section with the name
+you specified (*anapoly* in our example). Click on it and an empty patch opens.
+This is the subpatch where the new instrument's graphical user interface is going
+to live. The more interesting part - the main patch - is still hidden. You can
+access it through the menu _Window_ -> _Parent Window_.
+
+**Tip**: This applies to all instruments. If you want to study how a certain
+instrument works internally, go to its main patch through the _Window_ menu.
+
+Now let's go through some of the elements of your new instrument that every
+instrument contains:
+
+#### The Innards
+##### ![pd NETPD 2 0](netpd_metatags.png)- The metatags
+
+This is the container for the so-called **netpd** metatags. When loading an instrument
+with [unpatch](../unpatch), it will parse the content of this subpatch before
+loading the instrument. The numbers `2 0` specify the the metatag format version.
+Currently, **netpd** only supports this one version, so it is always `2 0`. If you click
+on the object, it will show its contents in a new window.
+
+There you find a message box
+![version 0 0 0](netpd_version.png). Whenever you change your instrument, make sure to
+bump the version to a higher value. Which one of the three numbers you bump, is up to you.
+This tells [unpatch](../unpatch) to transfer your instrument to your peers, if
+your version is higher. As said before, the `version` metatag is mandatory and
+[unpatch](../unpatch) refuses to load your instrument with an error message if it is
+missing.
+
+The subpatch ![pd abslist](netpd_abslist.png) is a container for the declarations of
+the dependencies of your instrument. It opens another canvas when you click on it.
+If your instruments uses abstractions, you would declare them there by putting
+a message box like ![anapoly-voice](netpd_anapoly-voice.png) for each abstraction.
+Also, the abstractions of your instrument require a metatag declaration
+(![pd NETPD 2 0](netpd_metatags.png)) with at least a version.
+
+
+##### ![pd $1-anapoly](netpd_gui-canvas.png)- The GUI
+This subpatch is displayed when you click on the instrument's name in [unpatch](../unpatch).
+In other words: The content of this subpatch is what the users see when using
+your instrument. You put everything what controls your instrument in there: sliders,
+number boxes, radios, toggles, etc. Remember that also the window position and
+size of this canvas is saved with your instrument. You might use to full potential
+of your creativity to design this canvas.
+
+The `$1` is a variable set by [unpatch](../unpatch). It is evaluated to the ID, the number
+shown near the instrument's name in [unpatch](../unpatch). This number is unique for
+each instrument. The part after the `-` must be set to the instrument's name. The combination
+`3-anapoly` is the title of the GUI window of your instrument.
+
+##### ![netpd_head $1 anapoly](netpd_head.png)- The state manager
+This abstraction is responsible for the communication with the other peers' copy
+of your instrument. It also initiates full dumps when saving current state with
+[unpatch](../unpatch)'s `save` button. Every instrument requires exactly one
+`[netpd_head]`. The first argument is always `$1`. The second argument must be
+set to the name of your instrument. The ID and the instrument name are also
+used in the OSC messages that are triggered when one of the controls of your
+instruments is touched. `[netpd_head]` prepends `/3/anapoly` (ID, name) to the
+OSC path of each OSC message generated by your instrument.
+
+
+##### ![netpd_f $1 param2 120](netpd_f.png)- A numeric parameter
+Now, the actual fun begins. `[netpd_f]` is responsible for handling
+a numeric parameter of your instrument. It ensures that a value change
+is sent to all peers. Each parameter requires an instance of `[netpd_f]`.
+The first argument is always `$1` (which evaluates to the ID). The second
+argument is the parameter name. You can give it any name, as long as it is
+unique within your instrument. The third argument sets the initial value.
+When the instrument is loaded, the parameter will be set to this value.
+
+
