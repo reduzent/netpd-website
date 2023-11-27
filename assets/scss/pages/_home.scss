@@ -43,3 +43,75 @@
     }
   }
 }
+
+#nr_button {
+  color: black;
+  background-color: #fff;
+  border: 2px solid #bbb;
+  border-radius: 15px;
+  padding: 2px 30px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px lightgrey;
+  height: 30px;
+}
+
+#nr_playbutton {
+   width: 16px;
+   height: 16px;
+}
+
+#nr_slider {
+  width: 98%;
+  cursor: pointer;
+}
+
+#nr_radiocontainer {
+  position: relative;
+  background-color: #f0f0f0;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #cfcfcf;
+  margin-bottom: 1em;
+}
+
+.nr_buttoncontainer {
+  float: left;
+  position: relative;
+  top:  50%;
+  margin: 0px 6px;
+  transform: translateY(-50%);
+}
+
+.nr_slidercontainer {
+  float: left;
+  width: 80px;
+  margin: 0px 10px;
+  position: relative;
+  top:  50%;
+  transform: translateY(-50%);
+}
+
+.nr_titlecontainer {
+  overflow: hidden;
+  width: auto;
+  padding-left: 20px;
+  position: relative;
+  top:  50%;
+  transform: translateY(-50%);
+}
+
+#nr_scrolltext {
+  background-color: #fff;
+  margin-right: 0.6em;
+  padding-left: 0.6em;
+  border: 1px #cfcfcf;
+  border-style: solid;
+  border-radius: 13px;
+}
+
+#nr_title {
+  margin: 2px;
+  font-size: 1.0em;
+}
+
+

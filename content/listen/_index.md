@@ -11,13 +11,11 @@ browse [mp3-records](/sessions/?C=N;O=D) of music created using netpd.
 
 All recorded sessions (see link above) are played in shuffle mode.
 
+{{% netpdradio  %}}
+
 [netpd-radio.m3u](netpd-radio.m3u) *← open this in your favorite player*
 
 
-<audio controls="true" preload="none">
-  <source src="https://radio.netpd.org:8443/netpd.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-</audio>
 
 ---
 
