@@ -223,17 +223,65 @@ documentation about the inner working of *netpd*, thus you would need to figure
 out how things work internally by studying the existing abstractions. Going more
 into detail here would go beyond the scope of this document. The available
 [netpd-abstractions](../docs/netpd-abstractions) cover the most common data types.
-When designing instruments like synths or effect libraries, chances 
+When designing instruments like synths or effect libraries, chances are you'll
+be able to realize your ideas with what is readily available. Other classes of
+instruments -  sequencers, for instance - might use more complex data structures
+that require their own synchronization between peers.
 
 ### Thoughts about instrument design
-Different data types require different ways to interact with them. Still,
-some principles apply to all types. Unlike in common Pure Data, where control
-operations usually happen in zero logical time ("instantaneously"), control operations
-in netpd suffer latency
+#### Network latency
+Unlike in common Pure Data, where control operations usually happen in zero logical
+time ("instantaneously"), control operations in netpd suffer latency because every
+message travels through the network to the server and from the server to all
+peers (including the peer where the message originated). Traveling through network
+takes time that ranges between a few milliseconds to a few hundred milliseconds,
+depending on geographically close peers are located to each other and to the server.
+Obviously, this latency has an impact on how things work, especially in a musical
+context. And there is not only latency, but also jitter. Jitter means that the
+time it takes for the network to deliver is not constant, but varies over time.
+Latency and jitter are immediately noticed, when a parameter is controlled in real
+time. However, when setting a note in sequencer, the latency does not matter that
+much since the note is only heard then it is actually played by the sequencer.
+The sequencer might use its own local clock and thus doesn't suffer from jitter.
+It's enough for a sequencer to send start and stop message through the network.
+For live audio, there is another trick to cope with latency. The overall latency
+from network and receive buffers most likely makes the live audio playback sound
+rhythmically off in regard to the generated sounds. When the latency is artificially
+increased so that the overall latency matches rhytmically meaningful time period
+such as a bar or defined number of beats, live audio blends in nicely.
 
-Please note that operations
-intended to change state are transmitted through the network before they
-have any effect. Where in Pd most operations can be executed in zero logical time, state
-changes take time in **netpd** due to network induced latency. The latency is variable
-and increases with the (physical) distance between peers. 
+#### Message order
+You might ask why does the server send back a message to the originating peer?
+What is the point of articially introducing network latency and jitter when
+the sender could just consume its own message right away? Why not leave the latency
+to the other peers? It's done that way to ensure every peer receives every
+message in the same order. The server forwards an incoming message to all peers
+before it handles the next one. Thus all messages are serialized in an order
+defined by the server. More precisely, the order is defined by the arrival time
+of incoming messages at the server. If the order is not defined in that manner,
+different peers would generate different output. All
+[netpd-abstractions](../netpd-abstractions) adhere to the principle that all
+messages pass the server. You only need to care about this principle when
+you implement your own syncrhonization of a custom data type.
+
+#### Audio latency
+When using audio input, either for live audio or for sampling, it is crucial to
+take into accout the audio latency, the time it takes for an audio signal to
+travel from audio input  through DSP processing to audio output, the so called
+roundtrip. Knowing this value enables instruments to compensate for the latency
+so that recorded sounds are played back rhythmically in sync with the rest
+of the sound. There is a setting in [netpd-preferences](../netpd-preferences) for
+audio latency. It even allows to measure the roundtrip time (rtt) when audio output
+is connected to audio input. You can retrieve that value with the object
+`[netpd-pref-get pd-audio-latency]`.
+
+#### Known state
+Usually, when dealing with data sets or objects in Pure Data, the state is known
+implicitly. When an `[f ]`  object is set to value 23, then there is no need
+to check that the value is really set to 23 afterwards. It can be reliably assumed
+that the `[f ]` object keeps the value 23 until it is set to a different value.
+In **netpd**, that is not the case for synchronized parameters, or parameters
+that are handled by one of the [netpd-abstractions](../netpd-abstractions).
+The first reason is that the actual state is not set when the parameter is set,
+but when the resulting message has travelled through the network. The
 
