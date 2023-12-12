@@ -296,6 +296,6 @@ react on such detected state changes and *never* on direct user input. Otherwise
 the behaviour of the instrument is different for each peer, depending on which peer
 manipulates the parameter. The manipulation of parameters by a user and the
 reaction of the instrument to detected state changes are separate processes.
-To think them as independent processes hopefully helps in understanding the
+To think them as independent processes hopefully helps to understand the
 sychnronization of more complex parameters.
 
