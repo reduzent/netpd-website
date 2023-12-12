@@ -71,10 +71,18 @@ to instruments is described in [instrument creation](instrument-creation).
 
 ## related topics
 
+### For users
+- [chat](chat)
+- [unpatch](unpatch)
+- [netpd-preferences](netpd-preferences)
+- [security](security)
+- [FAQ](faq)
+
+### For developers
 - [Paper describing netpd (PDF)](netpd-lac2013-paper.pdf)
-- [protocol](../docs/protocol)
-- [server](../docs/server)
-- [FAQ](../docs/faq)
-- [security](../docs/security)
+- [protocol](protocol)
+- [server](server)
+- [netpd-abstractions](netpd-abstractions)
+- [instrument creation](instrument-creation)
 
 
