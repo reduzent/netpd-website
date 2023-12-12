@@ -228,14 +228,14 @@ be able to realize your ideas with what is readily available. Other classes of
 instruments -  sequencers, for instance - might use more complex data structures
 that require their own synchronization between peers.
 
-### Thoughts about instrument design
+### Considerations about instrument design
 #### Network latency
 Unlike in common Pure Data, where control operations usually happen in zero logical
 time ("instantaneously"), control operations in netpd suffer latency because every
 message travels through the network to the server and from the server to all
-peers (including the peer where the message originated). Traveling through network
+peers (including the peer from which message originated). Traveling through network
 takes time that ranges between a few milliseconds to a few hundred milliseconds,
-depending on geographically close peers are located to each other and to the server.
+depending on how geographically close peers are located to the server.
 Obviously, this latency has an impact on how things work, especially in a musical
 context. And there is not only latency, but also jitter. Jitter means that the
 time it takes for the network to deliver is not constant, but varies over time.
@@ -260,28 +260,43 @@ before it handles the next one. Thus all messages are serialized in an order
 defined by the server. More precisely, the order is defined by the arrival time
 of incoming messages at the server. If the order is not defined in that manner,
 different peers would generate different output. All
-[netpd-abstractions](../netpd-abstractions) adhere to the principle that all
-messages pass the server. You only need to care about this principle when
-you implement your own syncrhonization of a custom data type.
+[netpd-abstractions](../netpd-abstractions) adhere to this principle.
+When you design a customized synchronization mechanism for your own complex
+parameter, keep in mind that all changes of state need to pass the server.
 
 #### Audio latency
 When using audio input, either for live audio or for sampling, it is crucial to
-take into accout the audio latency, the time it takes for an audio signal to
+take into accout the audio latency: the time it takes for an audio signal to
 travel from audio input  through DSP processing to audio output, the so called
-roundtrip. Knowing this value enables instruments to compensate for the latency
+roundtrip. Knowing this value enables instruments to compensate for this latency
 so that recorded sounds are played back rhythmically in sync with the rest
 of the sound. There is a setting in [netpd-preferences](../netpd-preferences) for
 audio latency. It even allows to measure the roundtrip time (rtt) when audio output
 is connected to audio input. You can retrieve that value with the object
 `[netpd-pref-get pd-audio-latency]`.
 
-#### Known state
+#### Initiating and detecting state changes
 Usually, when dealing with data sets or objects in Pure Data, the state is known
 implicitly. When an `[f ]`  object is set to value 23, then there is no need
 to check that the value is really set to 23 afterwards. It can be reliably assumed
 that the `[f ]` object keeps the value 23 until it is set to a different value.
 In **netpd**, that is not the case for synchronized parameters, or parameters
 that are handled by one of the [netpd-abstractions](../netpd-abstractions).
-The first reason is that the actual state is not set when the parameter is set,
-but when the resulting message has travelled through the network. The
+Firstly, it is no not known when exactly the value of a certain parameter is set,
+since each change of state travels through the network first. At the moment a
+parameter is changed, no assumption about its internal state can be made. Secondly,
+the value of the parameter might change any time, because all peers control it.
+Thus, such parameters need an interface to notify about state changes. In the case
+of `[netpd_f]` the new number is simply output through the the outlet (and the GUI
+widget is updated accordingly). Let's take a more complex parameter as another
+example: `[netpd_text]`. `[netpd_text]` is a **netpd** version of Pd's `[text]`
+object, but unlike Pd's original `[text]`, `[netpd_text]` has an additional
+outlet where it reports all state changes. This allows an instrument to react
+on specific changes initiated by any peer. Actually, the instrument should *only*
+react on such detected state changes and *never* on direct user input. Otherwise,
+the behaviour of the instrument is different for each peer, depending on which peer
+manipulates the parameter. The manipulation of parameters by a user and the
+reaction of the instrument to detected state changes are separate processes.
+To think them as independent processes hopefully helps in understanding the
+sychnronization of more complex parameters.
 
