@@ -1,7 +1,6 @@
 baseURL = 'https://netpd.org/'
 languageCode = 'en-us'
 title = 'n e t p d'
-theme = 'hugo-whisper-theme'
 enableInlineShortCodes = true
 copyright = 'netpd.org'
 
