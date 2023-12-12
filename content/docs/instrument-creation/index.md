@@ -1,7 +1,6 @@
 ---
 title: instrument creation
 ---
-# [DRAFT]
 ## Instrument Creation
 
 ### What is an instrument?
