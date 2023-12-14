@@ -8,9 +8,8 @@ $grid-breakpoints: (
 
 $container-max-widths: (
   sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
+  md: 680px,
+  lg: 800px,
 );
 
 $grid-gutter-width: 20px;
@@ -18,7 +17,7 @@ $grid-gutter-width: 20px;
 //$primary: #1de9b6;
 $primary: #f60;
 $secondary: #ffca28;
-$black: #212529;
+$black: #000;
 
 // Links
 $link-color: $primary;
