@@ -2,7 +2,8 @@
 title: 'instruments'
 ---
 
-## utils
+## Instruments
+### utils
 - [cloner](cloner) - copy all or a subset of settings from one instrument to another
 - [evil](evil) - live audio with pre-defined latency (check your bandwidth!)
 - [latch2](latch2) - automation recorder and player (time independent from master)
@@ -12,7 +13,7 @@ title: 'instruments'
 - [mx](mx) - mixer with insert effect slots and aux effect slots
 - [pcr-30](pcr-30) - midi to netpd mapper with learning capability
 
-## synths
+### synths
 - [bassist](bassist) - monophonic bass synth with editable wavetable
 - [bon-padsynth1](bon-padsynth1) - name says it all (polyphonic)
 - [cheapchord](cheapchord) - monophonic synth that plays hard-coded major7 chords
@@ -32,12 +33,12 @@ title: 'instruments'
 - [yurnois](yurnois) - experimental synth based on narrowly filtered noise.
 - [zupfr](zufpr) - polyphonic string plucker (a la Karplus & Strong)
 
-## seqs
+### seqs
 - [qseq3](qseq3) - dynamic sequencer
 - [unpunch](unpunch) (abstraction) - MIDI-like piano roll-like sequencer that supports key commands
 - [unstep](unstep) (abstraction) - piano roll-like sequencer used by many synths (supports only triggers, no duration)
 
-## fx
+### fx
 - [e-lib](e-lib) - various effects, mostly created by eni
 - [dynlib](dynlib) - compressor, limiter, 4-band multi-band compressor
 - [filtlib](filtlib) - a suite of different filters
