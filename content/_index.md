@@ -28,6 +28,7 @@ other purposes, where realtime state synchronization is a requirement.
 
 ### netpd v2.3.4 released
 
+Features and changes:
 * move preferences to `~/.netpd.cnf` so that it survives netpd upgrades
 * add pop-up dialog for messages that should not go unnoticed
 * warn about some conditions with mentioned pop-up:
