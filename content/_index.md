@@ -26,6 +26,50 @@ other purposes, where realtime state synchronization is a requirement.
 ---
 ## news
 
+### netpd v2.3.4 released
+
+* move preferences to `~/.netpd.cnf` so that it survives netpd upgrades
+* add pop-up dialog for messages that should not go unnoticed
+* warn about some conditions with mentioned pop-up:
+  * warn about non-standard samplerate (important for sharing audio)
+  * warn about uninitiated disconnects to prevent unnnoticed split-brain situations
+* new abstractions:
+  * netpd-default: output default value if arg of parent is not specified
+  * netpd-error: helper for displaying error messages
+  * netpd-warning: helper for displaying warning messages
+  * netpd-line-wrapper: allows to display multi-line text on GUI objects
+* suppress clock sync messages in debug output
+* various other fixes
+
+[Get it](/download) while it's hot!
+
+
+### untik brings a new clock system
+
+[untik](/instruments/untik) is a new clock that replaces [master](/instruments/master) and
+is much more capable. It replaces the poly stuff that was implemented seperately on
+different sequencers. [untik](/instruments/untik) allows to play arbitrary patterns with freely
+adjustable time intervals and thus covers much more than polyrhythms and shuffle (which was either
+or with [master](/instruments/master)). It features a pattern editor where timing invervals
+can be adjusted. 
+
+[untik](/instruments/untik) brings a whole new clock system with a unified interface. Each
+instrument that consumes a clock can now select a clock source from many available.
+[untik](/instruments/untik) provides up to 8 clocks with each providing a separate
+timing pattern from which sequencers can choose from. Integrating new instruments into
+the untik eco system is as simple as adding two abstractions. Integrating your own
+clock provider is almost as simple.
+
+The switch from [master](/instruments/master) to [untik](/instruments/untik) required
+changes in all instruments that consume clock data in any form, including sequencers
+and many effects. They all have been converted to the [untik](/instruments/untik)
+clock system. Those changes are not backwards compatible and the switch means that
+old saved session won't be loaded correctly. However, it is possible to fix them
+by manually setting the clock source everywhere.
+
+The old [master](/instruments/master) clock is still available, but also has been
+converted to the [untik](/instruments/untik) system so that the upgraded instruments can still use it.
+
 ### website overhaul
 
 The website at https://netpd.org has experienced a major revision. It's
@@ -33,14 +77,4 @@ now based on [Hugo](https://gohugo.io/) (static website builder)
 and the [whisper](https://github.com/zerostaticthemes/hugo-whisper-theme.git)
 theme. The content is hosted in a [git repository](https://github.com/reduzent/netpd-website).
 The old site was moved to [https://old.netpd.org](https://old.netpd.org)
-
-### ripple - a sample-based synthesizer
-
-[ripple](instruments/ripple) records audio samples and plays them back in three different
-modes. Finally an instrument that fully uses [unpunch](docs/unpunch)'s features.
-
-### ep-mk2 - an e-piano emulation
-
-Originally written by Mike Moreno, this physical modelling based instrument
-was ported to netpd. Check [ep-mk2](instruments/ep-mk2).
 
