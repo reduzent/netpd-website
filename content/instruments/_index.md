@@ -8,10 +8,11 @@ title: 'instruments'
 - [evil](evil) - live audio with pre-defined latency (check your bandwidth!)
 - [latch2](latch2) - automation recorder and player (time independent from master)
 - [latch3](latch3) - slightly more advanced automation recorder and player
-- [master](master) - master clock for all sequencers, keeps time among clients in sync
+- [master](master) - old clock for sequencers (superseeded by [untik](untik))
 - [metaseq](metaseq) - timeline slicer
 - [mx](mx) - mixer with insert effect slots and aux effect slots
 - [pcr-30](pcr-30) - midi to netpd mapper with learning capability
+- [untik](untik) - slightly more advanced clock (meant to replace [master](master))
 
 ### synths
 - [bassist](bassist) - monophonic bass synth with editable wavetable
