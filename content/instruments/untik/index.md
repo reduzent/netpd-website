@@ -39,10 +39,10 @@ and want it to make available to clock consumers.
 ![untik](untik.png)
 
 start/stop (square on the left)
-: start and stop the clock.
+: starts and stops the clock.
 
 bpm
-: set the speed in beats per minute.
+: sets the speed in beats per minute.
 
 beats
 : defines how many beats a bar consists of.
@@ -85,14 +85,24 @@ loop editor
 ### pattern editor
 ![untik-pattern-editor](untik-pattern-editor.png)
 
-pattern selection
-: sjdklfa jksdf ksajlfd
+A time pattern is a series of ticks with editable time intervals. A time pattern is
+also defined by its length - measured in regular ticks of the main clock - and the
+number of ticks 
 
-pattern editing
-: sjkls dfa sdjklsafd
+pattern selection (top row of buttons)
+: selects a pattern to be edited. There are 8 patterns available. The button labels
+reflect the name given to the pattern.
 
-pattern properties
-: jklsd jkslfdskjdlf sdkl
+pattern editing (middle section)
+: allo
+
+pattern properties (bottom section)
+: sets some properties of the selected pattern, namely whether the pattern is active and
+the name of the pattern. Inactive patterns are not listed in the list of available
+clocks. Giving a pattern a meaningful name, makes it easier for instruments to pick
+the right clock source.
+
+**NOTE**: Before you can edit a pattern, you need to activate it first.
 
 ### loop editor
 ![untik-loop-editor](untik-loop-editor.png)
