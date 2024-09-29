@@ -86,15 +86,26 @@ loop editor
 ![untik-pattern-editor](untik-pattern-editor.png)
 
 A time pattern is a series of ticks with editable time intervals. A time pattern is
-also defined by its length - measured in regular ticks of the main clock - and the
-number of ticks 
+defined by its length - measured in regular ticks of the main clock, the
+number of ticks played within this time frame, and the exact position of each tick.
 
 pattern selection (top row of buttons)
 : selects a pattern to be edited. There are 8 patterns available. The button labels
 reflect the name given to the pattern.
 
 pattern editing (middle section)
-: allo
+: modifies the selected time pattern. The upper number on the left defines the
+length of the pattern (measured in regular ticks of the main clock), while the lower
+number sets the number of ticks. Each tick is represented by a green vertical line
+that can be moved around horizontally (grab it in the middle). The distance between
+two subsequent lines defines the time interval between those ticks.  Whenever the
+numbers on the left are changed, the ticks are spread evenly over the pattern. For
+instance, a 3 - 7 pattern means that 7 ticks are played during the time of three
+regular ticks. This is similar to what could be achieved with the poly settings
+in master. However, in the pattern editor each tick can be moved around freely,
+which allows for much more rhythmical complexity and nuance. The number labels
+on the top show where regular ticks (from main clock) would be, while the number
+labels on the bottom show the even distribution of pattern ticks.
 
 pattern properties (bottom section)
 : sets some properties of the selected pattern, namely whether the pattern is active and
@@ -107,21 +118,34 @@ the right clock source.
 ### loop editor
 ![untik-loop-editor](untik-loop-editor.png)
 
-enable start from
-: jskdlf asjdklas dfjkl
+enable 'start from'
+: (left rectangle) controls how untik starts. With it disabled, untik starts from
+current position. With this enabled, untik starts from the position defined in
+'from'.
 
 from
-: sdjlk sdjklsd fjkl
+: sets the start position. For this to have an effect, at least one of the two
+rectangles ('start from' and/or 'enable loop') needs to be enabled. If looping
+is enabled, it sets the start position for the loop. If 'start from' is enabled,
+it sets the position for when untik is started the next time. The 'from' position
+can be set in bars, beats, or ticks.
 
-: sdjlksd fjklsd
+enable 'loop'
+: enables looping. When enabled during playback, the clock position jumps
+imeediately to the corresponding position within the time frame defined by 'from'
+and 'loop' (actually, length of loop).
 
-enable loop for
-: sjdlkas df
+loop
+: sets the loop length, either in bars, beats, or ticks.
 
-loop length
-: jlksd sjklsdf jklsdf
+### usage in clock consumers
+All instruments requiring clock information use a drop-down menu listing all
+available clocks. The **untik** clock systems isn't restricted to clocks from untik, but
+any clocks are listed. Clocks are listed with a short-code prefix from the provider.
 
-loop length unit
-: sdkjl asdjklas fdjkasdfjlk
+###### List of short-codes:
+- `u` <- `untik`
+- `m` <-  `master`
+- `ms` <- `metaseq`
 
-**TODO**
+
