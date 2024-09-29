@@ -6,6 +6,9 @@ title: 'metaseq'
 
 ![metaseq](metaseq.png)
 
+**NOTE** Above images show new version of **metaseq** that is compatible with
+[untik](../untik/). However, the documentation below hasn't been (fully ) updated.
+
 **metaseq** is a time-line slicer that acts as a middle man between the [master](../master) clock and a
 sequencer. It lets you arrange timeline segments freely in order to create more complex
 sequencing structures. Such arrangements are organized in sets. Sets can be chained in
