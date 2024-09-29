@@ -88,6 +88,8 @@ loop editor
 A time pattern is a series of ticks with editable time intervals. A time pattern is
 defined by its length - measured in regular ticks of the main clock, the
 number of ticks played within this time frame, and the exact position of each tick.
+Time patterns are repeated indefinitely and played back parallel to the main clock
+and thus each pattern constitutes its own clock.
 
 pattern selection (top row of buttons)
 : selects a pattern to be edited. There are 8 patterns available. The button labels
