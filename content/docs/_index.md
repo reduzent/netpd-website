@@ -5,7 +5,7 @@ title: 'docs'
 ## Get started
 
 ### Install dependencies
-In order to run **netpd**, you need to have [Pd](http://msp.ucsd.edu/software.html) >= 0.52
+In order to run **netpd**, you need to have [Pd](http://msp.ucsd.edu/software.html) >= 0.55
 and some externals installed.
 
 The following externals are required:
