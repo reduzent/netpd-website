@@ -4,16 +4,19 @@ title: download
 
 ## netpd client software
 
+---
 
-[![macOS logo](../images/macos_small.png)](https://netpd.org/software/netpd-current-macos.dmg)  
-[macOS](https://netpd.org/software/netpd-current-macos.dmg) (containing Pd, externals, netpd, instruments)
+[![macOS logo](../images/macos_small.png)](https://netpd.org/software/netpd-current-macos.dmg)  [macOS](https://netpd.org/software/netpd-current-macos.dmg) (containing Pd, externals, netpd, instruments)
 
-[![Windows logo](../images/windows_small.png)](https://netpd.org/software/netpd-current-windows.zip)  
-[Windows](https://netpd.org/software/netpd-current-windows.zip) (archive with Pd, externals, netpd, instruments)
+---
 
-![Linux logo](../images/linux_small.png)  
-There is no Linux bundle yet, sorry!
+[![Windows logo](../images/windows_small.png)](https://netpd.org/software/netpd-current-windows.zip) [Windows](https://netpd.org/software/netpd-current-windows.zip) (archive with Pd, externals, netpd, instruments)
 
+---
+
+![Linux logo](../images/linux_small.png) There is no Linux bundle yet, sorry!
+
+---
 
 See older packages [here](https://netpd.org/software/).
 
