@@ -20,7 +20,7 @@ See older packages [here](https://netpd.org/software/).
 
 ### netpd+instruments bundle *(updated daily)*
 
-If you already have Pd-Vanilla (>=0.55), use
+If you already have Pd installed, you can use
 [netpd-plus-instruments.zip](https://netpd.org/~roman/netpd-plus-instruments.zip).
 Check [docs](/docs/) for installation details and how to get started.
 
