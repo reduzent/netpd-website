@@ -94,3 +94,9 @@ to load files from disk without causing interruptions to the audio output.
 Also, make sure to leave the `callback` setting disabled. Enabling
 this is only useful for lowlatency setup. Enabling this while using JACK
 will completely disable any buffers.
+
+Another important parameter is the samplerate. The instruments dealing with
+samples and live audio (like [ripple](/instruments/ripple) or
+[evil](/instruments/evil)) don't perform any resampling. Thus, it's crucial
+that all peers use a common samplerate. For historic reasons, **netpd** settled
+on 44100 Hz. Recent versions of **netpd** warn when a different sr is detected.
