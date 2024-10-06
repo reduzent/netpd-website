@@ -9,37 +9,43 @@ title: 'metaseq'
 **NOTE** Above images show new version of **metaseq** that is compatible with
 [untik](../untik/). However, the documentation below hasn't been (fully ) updated.
 
-**metaseq** is a time-line slicer that acts as a middle man between the [master](../master) clock and a
+**metaseq** is a time-line slicer that acts as a middle man between the a linear main  clock
+(like [untik](../untik)) and a
 sequencer. It lets you arrange timeline segments freely in order to create more complex
 sequencing structures. Such arrangements are organized in sets. Sets can be chained in
-order to build even more complex structures.  All the sequencers in netpd, namely [qseq3](../qseq3),
-[unstep](../unstep), and [unpunch](../unpunch), support **metaseq**.
+order to build even more complex structures. Since **metaseq** fully integrates into the
+[untik](../untik) clock system, it is fully compatible with any existing sequencer.
+**metaseq** sets are themselves untik clock consumers and at the same time clock providers
+and thus can freely interact with each other.
 
 
 ### left-hand part: sets
 
-Sets are added with `|+|` and removed with `|-|`. `master` means that the clock
-source of the set is [master](../master), netpd's master clock. Sets can also use the output of
-other sets as their input clock. The input clock can be switched by dragging the
-left-most area of the set up and down with the mouse. Only sets with a smaller ID can
-be used as input clock (set 4 can use set 3, but set 3 cannot use set 5).
+There is a fixed number of eight sets available (yeah, the old pre-untik **metaseq** had
+virutally infinite sets, which unfortunately was not possible with the new system anymore).
+Each set provides the following parameters for editing:
 
-#### master as input clock
+clock selection
+: choses any clock from the available clocks. This includes **metaseq** sets with a non-zero
+number of segments.
 
-When master is used as input clock (the default), the whole set with all its segments
-is looped infinitely as is. The set length (thus loop length) is defined by the sum of
-the length of all segments.
+div
+: clock divider factor. Makes the input clock slower by an integer factor
 
-#### chained sets
+shift
+: shifts the set timing-wise to the right. This means the set starts playing only when the clock
+reaches the value of shift.  
+**Note**: The shift parameter has only an effect when length is non-zero. The slightly greyed out
+color indicates when shift is not active.
 
-When a set uses another set as clock input, two numbers appear near the clock input label.
-The first is the set offset and the second is the  set length. Those two numbers define the
-frame considered by the set. Clock input outside the frame is ignored and does not generate
-any output clock. Clock input within the frame is normalized by translating it by the set
-offset. For instance, when using *set_offset=256* and *set_length=128*, clock input from
-256 to 383 is converted to 0 to 127. Clock input outside that range is ignored. This allows
-for setups where one set feeds others that are played serially by having different
-framings (set_offset) defined.
+length
+: sets the length in ticks for which the set is played. When length is 0, the configured
+sequences of the set (right-hand part) are looped indefinitely. If the length is greater
+than length of the right-hand part (sum of sequences), the right-hand part is looped.
+
+pos
+: displays the curren tick position (taking div, shfit and length into accout). 
+
 
 
 ### right-hand part: segments
