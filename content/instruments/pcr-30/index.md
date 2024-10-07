@@ -2,9 +2,9 @@
 title: 'pcr-30'
 ---
 
-## pcr-30
-
 ![pcr-30](pcr-30.png)
+
+## pcr-30
 
 **pcr-30** connects a hardware or virtual MIDI controller to netpd. The instrument
 shown here uses a layout fitting the *Roland PCR-30* MIDI keyboard, but

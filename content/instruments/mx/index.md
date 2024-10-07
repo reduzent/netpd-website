@@ -2,9 +2,9 @@
 title: 'mx'
 ---
 
-## mx
-
 ![mx](mx.png)
+
+## mx
 
 **mx** mixes all audio outputs from sound generating instruments and
 provides a framework for using audio effects in netpd. Effects are organized

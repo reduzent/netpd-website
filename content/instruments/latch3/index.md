@@ -2,10 +2,10 @@
 title: 'latch3'
 ---
 
-## latch3
-
 ![latch3](latch3.png)
 
+
+## latch3
 
 **latch3** is another automation recorder similar to [latch2](../latch2).
 However, it is conceptually different from [latch2](../latch2) in that its timing is

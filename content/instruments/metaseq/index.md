@@ -2,9 +2,9 @@
 title: 'metaseq'
 ---
 
-## metaseq
-
 ![metaseq](metaseq.png)
+
+## metaseq
 
 **NOTE** Above images show new version of **metaseq** that is compatible with
 [untik](../untik/). However, the documentation below hasn't been (fully ) updated.

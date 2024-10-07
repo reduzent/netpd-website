@@ -2,9 +2,9 @@
 title: 'cloner'
 ---
 
-## cloner
-
 ![cloner](cloner.png)
+
+## cloner
 
 This utility allows you to copy all or a subset of settings
 from one instrument to another.

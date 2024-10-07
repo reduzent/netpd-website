@@ -2,9 +2,9 @@
 title: 'master'
 ---
 
-## master
-
 ![master](master.png)
+
+## master
 
 **NOTE**: master is the legacy clock and is superseeded by [untik](../untik)
 

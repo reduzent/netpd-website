@@ -2,9 +2,9 @@
 title: 'latch2'
 ---
 
-## latch2
-
 ![latch2](latch2.png)
+
+## latch2
 
 **latch2**  records and plays back automation parameters. It records any
 parameter of any instrument that consists of only one number. More
