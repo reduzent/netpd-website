@@ -6,15 +6,15 @@ title: download
 
 ---
 
-[![macOS logo](../images/macos_small.png)](https://netpd.org/software/netpd-current-macos.dmg)  [macOS](https://netpd.org/software/netpd-current-macos.dmg) (containing Pd, externals, netpd, instruments)
+[![macOS logo](../images/macos_small.png)](/software/netpd-current-macos.dmg)  [macOS](/software/netpd-current-macos.dmg) (containing Pd, externals, netpd, instruments)
 
 ---
 
-[![Windows logo](../images/windows_small.png)](https://netpd.org/software/netpd-current-windows.zip) [Windows](https://netpd.org/software/netpd-current-windows.zip) (archive with Pd, externals, netpd, instruments)
+[![Windows logo](../images/windows_small.png)](/software/netpd-current-windows.zip) [Windows](/software/netpd-current-windows.zip) (archive with Pd, externals, netpd, instruments)
 
 ---
 
-![Linux logo](../images/linux_small.png) There is no Linux bundle yet, sorry!
+[![Linux logo](../images/linux_small.png)](/software/netpd-current-x86_64.AppImage) [Linux](/software/netpd-current-x86_64.AppImage) (experimental AppImage)
 
 ---
 
