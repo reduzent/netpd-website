@@ -114,4 +114,12 @@
   font-size: 1.0em;
 }
 
+img[src$='#floatleft']
+{
+  float:left;
+}
 
+img[src$='#floatright']
+{
+  float:right;
+}
