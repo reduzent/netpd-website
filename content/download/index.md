@@ -6,15 +6,21 @@ title: download
 
 ---
 
-[![macOS logo](../images/macos_small.png)](/software/netpd-current-macos.dmg)  [macOS](/software/netpd-current-macos.dmg) (containing Pd, externals, netpd, instruments)
+
+[![Linux logo](../images/linux_small.png#floatleft)](/software/netpd-current-x86_64.AppImage) [Linux (x86_64)](/software/netpd-current-x86_64.AppImage) (AppImage) <br />
+Other archs: <br />
+[i686](/software/netpd-current-i686.AppImage),
+[aarch64](/software/netpd-current-aarch64.AppImage),
+[armhf](/software/netpd-current-armhf.AppImage)
+<div style="clear:both;"></div>
 
 ---
 
-[![Windows logo](../images/windows_small.png)](/software/netpd-current-windows.zip) [Windows](/software/netpd-current-windows.zip) (archive with Pd, externals, netpd, instruments)
+[![macOS logo](../images/macos_small.png)](/software/netpd-current-macos.dmg)  [macOS](/software/netpd-current-macos.dmg) (Universal App)
 
 ---
 
-[![Linux logo](../images/linux_small.png)](/software/netpd-current-x86_64.AppImage) [Linux](/software/netpd-current-x86_64.AppImage) (experimental AppImage)
+[![Windows logo](../images/windows_small.png)](/software/netpd-current-windows.zip) [Windows (x86_64)](/software/netpd-current-windows.zip) (Portable App)
 
 ---
 
