@@ -64,7 +64,7 @@ is always a netpd server running on netpd.org.
 
 ### current development version
 
-* today's snapshot as [zip](https://github.com/reduzent/netpd-server/zipball/master)
+* [netpd-server.zip](https://github.com/reduzent/netpd-server/zipball/master)
 * git repository:
   ```
   git clone https://github.com/reduzent/netpd-server.git
