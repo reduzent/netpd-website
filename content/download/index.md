@@ -14,7 +14,6 @@ Other archs: <br />
 [i686](/software/netpd-current-i686.AppImage),
 [aarch64](/software/netpd-current-aarch64.AppImage),
 [armhf](/software/netpd-current-armhf.AppImage)
-<div style="clear:both;"></div>
 
 ---
 
@@ -28,6 +27,7 @@ Other archs: <br />
 
 See older packages [here](https://netpd.org/software/).
 
+---
 
 ### netpd+instruments bundle *(updated daily)*
 
@@ -37,13 +37,18 @@ Check [docs](/docs/) for installation details and how to get started.
 
 ### netpd from git
 
-<!---
-![Git logo](../images/git_small.png)
---->
+
+![Git logo](../images/git_small.png#floatleft)
+
 
 ```
 git clone --recursive https://github.com/reduzent/netpd.git
 ```
+
+<div style="clear:both;"></div>
+
+<br/>
+
 
 Framework and instruments are hosted in different repositories:
   * [netpd.git](https://github.com/reduzent/netpd)
@@ -66,7 +71,9 @@ is always a netpd server running on netpd.org.
 
 * [netpd-server.zip](https://github.com/reduzent/netpd-server/zipball/master)
 * git repository:
-  ```
-  git clone https://github.com/reduzent/netpd-server.git
-  ```
+
+![Git logo](../images/git_small.png#floatleft)
+```
+git clone https://github.com/reduzent/netpd-server.git
+```
 
