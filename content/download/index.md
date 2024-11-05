@@ -7,7 +7,9 @@ title: download
 ---
 
 
-[![Linux logo](../images/linux_small.png#floatleft)](/software/netpd-current-x86_64.AppImage) [Linux (x86_64)](/software/netpd-current-x86_64.AppImage) (AppImage) <br />
+[![Linux logo](../images/linux_small.png#floatleft)](/software/netpd-current-x86_64.AppImage)
+[Linux (x86_64)](/software/netpd-current-x86_64.AppImage)
+(AppImage, experimental, please test and report back) <br />
 Other archs: <br />
 [i686](/software/netpd-current-i686.AppImage),
 [aarch64](/software/netpd-current-aarch64.AppImage),
