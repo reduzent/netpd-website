@@ -58,7 +58,7 @@ or less) in sync. If a receiving peer's clock is a few ticks ahead, their receiv
 buffer is less full when the clock hits the playback time, thus making buffer underruns
 more likely. As stated above, a buffer underrun on any receiving peer causes the
 whole transmission to stop. Thus, it is recommended to make sure before sending that
-clocks are in sync. [[../untik]] has automatic syncing enabled per default. However,
+clocks are in sync. [untik](../untik) has automatic syncing enabled per default. However,
 it should not perform any synchronization during **evil** transmissions. It is
 recommended to turn 'auto' in the 'sync' section off.
 
