@@ -26,7 +26,10 @@ port
 instruments path
 : Configures the directory where netpd looks for instruments.
 This directory must contain a directory named `abs` where the
-abstractions used by the instruments are stored.
+abstractions used by the instruments are stored. The default is
+`~/netpd-instruments`. If this parameter hasn't been configured,
+netpd asks to create that directory (and the `abs` directory
+inside).
 
 connect at start
 : Configures whether netpd automatically connects to the
@@ -74,6 +77,6 @@ the `alsa` and `jack` buttons).
 save&close
 : Any modifications take effect immediately. However, the current configuration
 is only saved when this button is clicked. The preferences are stored in
-`netpd/netpd-preferences.cnf`. This file is read by [chat](../chat) at startup.
+`~/.netpd.cnf`. This file is read by [chat](../chat) at startup.
 
 
