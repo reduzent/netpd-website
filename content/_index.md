@@ -1,4 +1,5 @@
 ---
+title: about
 ---
 
 
@@ -26,6 +27,19 @@ other purposes, where realtime state synchronization is a requirement.
 
 ---
 ## news
+
+### netpd v2.3.5 released
+
+**netpd** now saves received instruments into a configurable directory
+that is separate from the built-in instruments. Thus, standalone apps
+are not modified and netpd can be safely upgraded while keeping all
+custom instruments in place.
+
+This is the first release that features Linux AppImages of netpd. Yay!
+
+See the full [release notes](https://github.com/reduzent/netpd/releases/tag/v2.3.5) or go
+straight to [download](/download)
+
 
 ### netpd v2.3.4 released
 
