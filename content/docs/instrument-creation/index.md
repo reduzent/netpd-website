@@ -81,7 +81,7 @@ to the [chat](../chat) text input:
 
 A small umbrella (☂) near the *unpatch* label indicates that [unpatch](../ubpatch)
 is running in protected mode now nobody can (accidentally or willfully) close
-it while you're developing it.
+your new instrument while you're developing it.
 
 #### Find a name
 [unpatch](../unpatch) helps you create a new instrument skeleton from scratch.
