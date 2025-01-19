@@ -64,5 +64,5 @@ summaryLength = 30
       standard  = "/images/netpd_logo.svg"
 
   [params.footer]
-    copyright_text = '🄯  <a href="https://github.com/reduzent/netpd-website">netpd.org</a>, 2024'
+    copyright_text = '🄯  <a href="https://github.com/reduzent/netpd-website">netpd.org</a>, 2025'
 
