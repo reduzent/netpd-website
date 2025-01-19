@@ -4,8 +4,9 @@ title: download
 
 ## netpd client software
 
----
+Current Release: **2.3.5** (See [Release Notes](https://github.com/reduzent/netpd/releases/tag/v2.3.5))
 
+---
 
 [![Linux logo](../images/linux_small.png#floatleft)](/software/netpd-current-x86_64.AppImage)
 [Linux (x86_64)](/software/netpd-current-x86_64.AppImage)
