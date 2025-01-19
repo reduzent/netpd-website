@@ -39,9 +39,11 @@ to join:
   and curious attitude, where never-heard-before sound territory is
   explored and instruments are used in unforseen ways.
 - **Friday Morning @ 8am (UTC)**  
-  This jam is usually more focussed on ambient and athmospheric music.
+  ~~This jam is usually more focussed on ambient and athmospheric music.
   Jams often start with building a structure in order to record a
-  "listenable" piece later.
+  "listenable" piece later.~~ Unfortunately, this jam has been halted
+  for a while due to personal circumstances of a core member.
+  We're looking forward to pick it up again as soon as possible.
 
 ##### Netiquette
 When joining an already running session, make yourself familiar with
